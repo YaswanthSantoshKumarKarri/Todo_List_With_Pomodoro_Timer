@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <!--*****header area starts*****-->
+    <header>
+        <label for="check">
+            <i class="fa fa-bars" aria-hidden="true" id="sidebar_btn"></i>
+
+        </label>
+        <div class="left_area">
+            <h3>Pomo<span>doro</span></h3>
+        </div>
+        <div class="right_area">
+            <a href="#" class="logout_btn">time is too fast to delay</a>
+        </div>
+    </header>
+    <!--******header area end*******-->
+     <!--*********sidebar start********-->
+     <div class="sidebar">
+         <center>
+            <img src="1.jpg" class="profile_image" alt="">
+            <h4>UserID:255</h4>
+        </center>
+        <a href="test2.html"><i class="fa fa-info-circle" aria-hidden="true"></i>
+            <span >Help</span>
+        </a>
+
+        <a href="contact1.html"><i class="fa fa-address-book" aria-hidden="true"></i>
+            <span>Contact</span></a>
+    </div>
+
+     <!--*********sidebar ends*********-->
+     <div class="content">
+        <!--*****************************clock**************************************-->
+        <div id="container">
+            <div class="blur">
+                <div class="back">
+                            <!--Work Timer-->
+                            <div class="workdiv">
+                                <div id="work" class="label">Work:</div>
+                                <div id="work-timer" class="timer">
+                                    <span id="w_minutes">25</span><span class="semicolon">:</span><span id="w_seconds">00</span>
+                                </div>
+                                <button id="start" class="btn">Start</button>
+                            </div>
+                            <!--Cycle Counter-->
+                            <div class="cyclesdiv">
+                                <div id="cycles" class="label">Cycles:</div>
+                                <div id="counter" class="timer">00</div>
+                                <button id="reset" class="btn">Reset</button>
+                            </div>                         
+                            <!--Break Timer-->
+                            <div class="breakdiv">
+                                <div id="break" class="label">Break:</div>
+                                <div id="break-timer" class="timer">
+                                    <span id="b_minutes">05</span><span class="semicolon">:</span><span id="b_seconds">00</span>
+                                </div> 
+                                <button id="stop" class="btn">pause</button>                               
+                            </div>    
+                </div>    
+            </div>
+        </div>
+        </div>
+
+<!--*****************************clock****************************************-->
+
+<!--*****************************to do****************************************-->
+<div class="todo"><input id="inputField" type="text"><button id="addToDo">+</button>
+    <div class="to-dos" id="toDoContainer"></div>
+</div>
+<!--*****************************to do****************************************-->
+
+
+
+    
+<script src="test.js"></script>
+
+
+</body>
+</html>
